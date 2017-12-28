@@ -5,10 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImageViewer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="377.2" Width="653.8">
     <Grid>
-        <Canvas  Name="ImagePanel" Drop="ImagePanel_Drop" AllowDrop="true">           
+        <Canvas  Name="ImagePanel" Drop="ImagePanel_Drop" AllowDrop="true" Margin="10,0,140.8,30.8">
             <!--<Image Source="{Binding }"/>-->
         </Canvas>
+        <ListView HorizontalAlignment="Left" Height="316.8" Margin="511.6,0,0,0" VerticalAlignment="Top" Width="125.8">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="PREVIOUS" HorizontalAlignment="Left" Margin="10,321.8,0,0" VerticalAlignment="Top" Width="191.4" Height="22.2"/>
+        <Button Content="NEXT" HorizontalAlignment="Left" Margin="315.2,321.8,0,0" VerticalAlignment="Top" Width="191.4" Height="22.2"/>
+        <Button Content="BLUR" HorizontalAlignment="Left" Margin="223.2,321.8,0,0" VerticalAlignment="Top" Width="75" Height="22.2"/>
     </Grid>
 </Window>
