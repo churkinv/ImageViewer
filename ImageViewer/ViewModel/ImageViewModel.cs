@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
 namespace ImageViewer.ViewModel
 {
-    public class ImageViewModel
+    public class ImageViewModel : ViewModelBase
     {
         public string Name { get; set; }
         private string _path;
@@ -52,7 +48,6 @@ namespace ImageViewer.ViewModel
             foreach (string word in words)
             {
                 string wordLower = word.ToLower();
-
                 int count;
 
                 //if (!_wordCounts.TryGetValue(wordLower, out count))
